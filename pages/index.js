@@ -9,6 +9,8 @@ export default function Home() {
       <Head>
         <title>Market Apps Demo</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
 
       <div className={commonStyles.appHeader}>
