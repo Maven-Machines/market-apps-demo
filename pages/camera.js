@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
+import Image from 'next/image'
 import styles from '../styles/Camera.module.scss'
 import commonStyles from "../styles/Common.module.scss"
 
 export default function Camera() {
   const [selectedFile, setSelectedFile] = useState();
-  const [preview, setPreview] = useState()
+  const [preview, setPreview] = useState(null);
 
   useEffect(() => {
     if (!selectedFile) {
@@ -17,7 +18,7 @@ export default function Camera() {
 
     // free memory when ever this component is unmounted
     return () => URL.revokeObjectURL(objectUrl)
-  }, selectedFile)
+  }, [selectedFile])
 
   function handleFileSelected(event) {
 		setSelectedFile(event.target.files[0]);
@@ -29,7 +30,7 @@ export default function Camera() {
         Camera Demo
       </div>
       <div className={styles.uploadContainer}>
-        <label for="cameraFileInput">
+        <label htmlFor="cameraFileInput">
           <span className={commonStyles.actionButton}>Take Picture</span>
           <input
             id={"cameraFileInput"}
@@ -43,7 +44,10 @@ export default function Camera() {
       </div>
       {selectedFile && 
         <div className={styles.previewContainer}>
-          <img src={preview} />
+          <picture>
+            <source srcSet={preview} />
+            <img src={preview} alt="Image Preview" />
+          </picture>
         </div>
       }
     </main>
