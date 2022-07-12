@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
 import commonStyles from "../styles/Common.module.scss"
 import styles from '../styles/Home.module.scss'
 
@@ -12,19 +12,23 @@ export default function Home() {
       </Head>
 
       <div className={commonStyles.appHeader}>
-       <a href="/">Market Apps Demo</a>
+       <Link href="/">Market Apps Demo</Link>
       </div>
 
       <main className={styles.main}>
         <div className={styles.grid}>
-        <a href="/camera" className={styles.card}>
-          <h2>Camera Demo &rarr;</h2>
-          <p>Take pictures and document scans</p>
-        </a>
-        <a href="/pdf" className={styles.card}>
-          <h2>PDF Demo &rarr;</h2>
-          <p>Load PDFs inside of your app</p>
-        </a>
+          <Link href="/camera" >
+            <a className={styles.card}>
+              <h2>Camera Demo &rarr;</h2>
+              <p>Take pictures and document scans</p>
+            </a>
+          </Link>
+          <Link href="/pdf" className={styles.card}>
+            <a className={styles.card}>
+              <h2>PDF Demo &rarr;</h2>
+              <p>Load PDFs inside of your app</p>
+            </a>
+          </Link>
         </div>
       </main>
     </div>

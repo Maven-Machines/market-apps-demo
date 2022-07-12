@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react';
 import commonStyles from "../styles/Common.module.scss"
 import styles from '../styles/Pdf.module.scss'
@@ -20,7 +20,7 @@ export default function PDF() {
       </Head>
 
       <div className={commonStyles.appHeader}>
-       <a href="/">Market Apps Demo</a>
+       <Link href="/"><a>Market Apps Demo</a></Link>
       </div>
 
       <main className={styles.main}>
