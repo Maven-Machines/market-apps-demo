@@ -5,15 +5,6 @@
     justify-content: center;
 }
 
-.pdfTitle {
-    text-align: center;
-    background-color: white;
-    border-bottom: 1px solid rgb(228, 228, 228);
-    font-size: 20px;
-    padding: 10px 15px;
-    margin-bottom: 15px;
-}
-
 .pdfDescription {
     background: white;
     margin: 15px auto;
@@ -28,12 +19,20 @@
     border: 1px solid rgba(0,0,0,0);
 }
 
+.loadingPdf {
+    background: white;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 @media (max-width: 1200px) {
     .pdfContainer {
         justify-content: flex-start;
     }
 
-    .pdfTitle {
-        margin-bottom: 0;
+    .loadingPdf {
+        width: 100vw;
     }
-  }
+}

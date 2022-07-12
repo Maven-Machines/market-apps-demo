@@ -1,0 +1,32 @@
+.uploadContainer {
+    background-color: white;
+    padding: 15px 30px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.cameraInput {
+    display: none;
+}
+
+.previewContainer {
+    width: 90%;
+    background-color: white;
+    padding: 5px;
+    margin: 15px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .uploadContainer {
+        width: 100%;
+        border-radius: 0;
+    }
+}
