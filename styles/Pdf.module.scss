@@ -1,0 +1,39 @@
+.pdfContainer {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pdfTitle {
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    font-size: 20px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.pdfDescription {
+    background: white;
+    margin: 15px auto;
+    padding: 1.5rem;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0,0,0,0);
+}
+
+@media (max-width: 1200px) {
+    .pdfContainer {
+        justify-content: flex-start;
+    }
+
+    .pdfTitle {
+        margin-bottom: 0;
+    }
+  }

@@ -1,0 +1,62 @@
+// primary
+@value color-maven: #172b4d;
+@value color-oceania: #2c84f4;
+@value color-marshmallow: #fff;
+
+// secondary
+@value color-poppy-red: #ff5727;
+@value color-honey: #fcba30;
+@value color-mint-leaf: #3fc784;
+@value color-bahama: #56d4bd;
+@value color-opal-house-blue: #1a3bda;
+@value color-midnight: #132265;
+
+// neutral
+@value color-black-coal: #14171a;
+@value color-slate: #3c444d;
+@value color-dark-clouds: #626262;
+@value color-battleship-grey: #6e7377;
+@value color-grey-skies: #a7a7a7;
+@value color-dusty: #cacaca;
+@value color-mid-grey: #dfdfdf;
+@value color-silver: #e1e3e4;
+@value color-washed: #efefef;
+@value color-faded: #f5f6f7;
+@value color-alabaster: #f9f9f9;
+@value color-red: #e01a1a;
+@value color-alto: #e0e0e0;
+@value color-gray: #949494;
+@value color-whisper: #ececec;
+
+// extended
+@value color-rose-red: #d33300;
+@value color-mamacita: #e73700;
+@value color-moulin-rouge: #ff6332;
+@value color-peach: #ff9c7d;
+@value color-pink-starburst: #ff8e8e;
+@value color-dark-tangerine: #fea31a;
+@value color-tangerine: #fc8630;
+@value color-orange: #fcaa30;
+@value color-mango: #febc34;
+@value color-golden-hour: #ffd914;
+@value color-post-it-note: #ffea7c;
+@value color-your-ass-is-grass: #50bb87;
+@value color-mossy: #45dd92;
+@value color-green-light: #45dd79;
+@value color-seafoam: #caffa9;
+@value color-smogg: #e5ffba;
+@value color-old-sofa: #4abea9;
+@value color-mermaid: #5ce7ce;
+@value color-90s-teal: #43ffde;
+@value color-basic-wg: #93ffd2;
+@value color-pastelli: #d0ffeb;
+@value color-open-water: #1c36b4;
+@value color-blue-lagoon: #2d51ff;
+@value color-arvo-breeze: #5772f2;
+@value color-bloo: #4c9aff;
+@value color-pixie-dust: #aacfff;
+@value color-indigo: #2d0067;
+@value color-plum: #5712ae;
+@value color-purple: #9542ff;
+@value color-barney: #b77ffe;
+@value color-lavender: #cfaaff;
