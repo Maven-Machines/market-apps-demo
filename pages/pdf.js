@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useState } from 'react';
 import styles from '../styles/Pdf.module.scss'
 import commonStyles from "../styles/Common.module.scss"
@@ -20,6 +21,9 @@ export default function PDF() {
 
   return (
     <main className={styles.main}>
+      <Head>
+        <title>PDF Demo</title>
+      </Head>
       <div className={commonStyles.pageTitle}>
         PDF Demo
       </div>

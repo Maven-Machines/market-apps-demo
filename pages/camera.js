@@ -1,5 +1,5 @@
+import Head from 'next/head'
 import { useState, useEffect } from 'react';
-import Image from 'next/image'
 import styles from '../styles/Camera.module.scss'
 import commonStyles from "../styles/Common.module.scss"
 
@@ -26,6 +26,9 @@ export default function Camera() {
 
   return (
     <main className={styles.main}>
+      <Head>
+        <title>Camera Demo</title>
+      </Head>
       <div className={commonStyles.pageTitle}>
         Camera Demo
       </div>
