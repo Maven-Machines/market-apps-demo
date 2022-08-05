@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     async function setupSdk() {
       maven.configure({
-        sdkBaseUrl: "https://integrations-development.mavenmachines.com/",
+        sdkBaseUrl: "https://integrations-qa.mavenmachines.com/",
       });
 
       const queryString = window.location.search;
