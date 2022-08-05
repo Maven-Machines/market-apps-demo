@@ -48,6 +48,31 @@
     cursor: pointer;
 }
 
+.loaderContainer {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid color-oceania;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
 @media (max-width: 1200px) {
     .pageTitle {
         margin-bottom: 0;
