@@ -18,7 +18,6 @@ function MyApp({ Component, pageProps }) {
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       const requestContext = urlParams.get("requestContext");
-      setRequestContext(requestContext);
       // const requestContext = '%7B%0A%20%20%22employeeId%22%3A%2045%2C%0A%20%20%22deviceLocation%22%3A%20%7B%0A%20%20%20%20%22timestamp%22%3A%201659024285233%2C%0A%20%20%20%20%22latitude%22%3A%2040.46365%2C%20%0A%20%20%20%20%22longitude%22%3A%20-79.95387%0A%20%20%7D%2C%0A%20%20%22marketAppSessionToken%22%3A%20%2231d6cfe0d16ae931b73c59d7e0c089c0%22%0A%7D';
       // const requestContext = encodeURIComponent(
       //   JSON.stringify({
