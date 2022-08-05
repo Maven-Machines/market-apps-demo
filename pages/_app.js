@@ -2,13 +2,12 @@ import "../styles/globals.css";
 import Layout from "../components/layout";
 import { useState, useEffect } from "react";
 
-const API_KEY = "1ed693b2-50b7-4300-9fd0-500ca21d565c";
+const API_KEY = "d8dae0c6-2d99-4cb5-921f-8f17707cea20";
 const APP_ID = "APP_ID";
 
 function MyApp({ Component, pageProps }) {
   const [hasLoadedData, setLoadedData] = useState(false);
   const [driver, setDriver] = useState(null);
-  const [requestContext, setRequestContext] = useState(null);
 
   useEffect(() => {
     async function setupSdk() {
@@ -52,7 +51,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout hasLoadedData={hasLoadedData}>
-      <div>{requestContext}</div>
       <Component {...pageProps} hasLoadedData={hasLoadedData} driver={driver} />
     </Layout>
   );
