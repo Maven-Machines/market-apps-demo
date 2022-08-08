@@ -11,7 +11,6 @@ const APP_ID = "APP_ID";
 function MyApp({ Component, pageProps }) {
   const [hasLoadedData, setLoadedData] = useState(false);
   const [driver, setDriver] = useState(null);
-  const [env, setEnv] = useState(null);
 
   useEffect(() => {
     async function setupSdk() {
@@ -27,8 +26,6 @@ function MyApp({ Component, pageProps }) {
         maven.configure({
           sdkBaseUrl: getBaseUrlForEnvironment(env),
         });
-
-        setEnv(decoded);
 
         const session = await maven.getSessionFromRequestContext(
           APP_ID,
@@ -49,7 +46,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout hasLoadedData={hasLoadedData}>
-      {env}
       <Component {...pageProps} hasLoadedData={hasLoadedData} driver={driver} />
     </Layout>
   );
