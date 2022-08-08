@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
           sdkBaseUrl: getBaseUrlForEnvironment(env),
         });
 
-        setEnv(parsedContext.environment);
+        setEnv(decoded);
 
         const session = await maven.getSessionFromRequestContext(
           APP_ID,
