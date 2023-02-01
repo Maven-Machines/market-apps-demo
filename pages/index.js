@@ -6,7 +6,7 @@ export default function Home({ driver }) {
   if (driver) {
     driverContent = (
       <div className={styles.heroContainer}>
-        <h1>Hello {driver.firstName}!</h1>
+        <h1>Hi {driver.firstName}!</h1>
         <p>Tap the cards below to launch a demo</p>
       </div>
     );
