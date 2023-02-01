@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NEXT_PUBLIC_DEV_API_KEY='1ed693b2-50b7-4300-9fd0-500ca21d565c' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,6 +12,7 @@
     "next": "12.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-iframe": "^1.8.5",
     "react-pdf": "^5.7.2"
   },
   "devDependencies": {
