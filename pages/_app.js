@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
 		const deviceLocation = await session.getLatestDeviceLocation();
         setLoadedData(true);
         setDriver(driver);
-        setDeviceLocation(driver);
+        setDeviceLocation(deviceLocation);
       } catch (e) {
         console.log(e);
         setLoadedData(true);
