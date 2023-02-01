@@ -2,13 +2,14 @@ import Link from "next/link";
 import styles from "../styles/Home.module.scss";
 import Iframe from "react-iframe";
 
-export default function Home({ driver }) {
+export default function Home({ driver, deviceLocation }) {
   let driverContent = null;
   if (driver) {
     driverContent = (
       <div className={styles.heroContainer}>
         <h1>Hi {driver.firstName}!</h1>
         <p>Tap the cards below to launch a demo</p>
+		<p>{JSON.stringify(deviceLocation)}</p>
       </div>
     );
   }

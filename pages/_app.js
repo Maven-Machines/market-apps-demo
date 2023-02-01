@@ -11,6 +11,7 @@ const APP_ID = "APP_ID";
 function MyApp({ Component, pageProps }) {
   const [hasLoadedData, setLoadedData] = useState(false);
   const [driver, setDriver] = useState(null);
+  const [deviceLocation, setDeviceLocation] = useState(null);
 
   useEffect(() => {
     async function setupSdk() {
@@ -33,8 +34,10 @@ function MyApp({ Component, pageProps }) {
           requestContext
         );
         const driver = await session.getDriver();
+		const deviceLocation = await session.getLatestDeviceLocation();
         setLoadedData(true);
         setDriver(driver);
+        setDeviceLocation(deviceLocation);
       } catch (e) {
         console.log(e);
         setLoadedData(true);
@@ -46,7 +49,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout hasLoadedData={hasLoadedData}>
-      <Component {...pageProps} hasLoadedData={hasLoadedData} driver={driver} />
+      <Component {...pageProps} hasLoadedData={hasLoadedData} driver={driver} deviceLocation={deviceLocation}/>
     </Layout>
   );
 }
